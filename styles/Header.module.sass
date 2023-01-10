@@ -1,0 +1,134 @@
+@import 'config'
+
+.header
+    background-color: $primary-color
+    width: 100%
+    color: $light
+    height: 230px
+    .topNav
+        display: flex
+        justify-content: center
+        align-content: center
+        padding: 20px 10px 0px
+        flex-direction: row
+        h1
+            color: $secondary-color
+            font-size: 30px
+        .logo
+            display: flex
+            height: auto
+            width: 20%
+            cursor: pointer
+            gap: 10px
+        .searchInput
+            display: flex
+            gap: 20px
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            width: 100%
+            .input
+                height: 40px
+                font-size: 16px
+                width: 70%
+                border-radius: 50px
+                border: solid 1px $light
+                padding: 10px
+                font-size: 20px
+                &:focus
+                    border: solid 1px $light
+            .searchButton
+                cursor: pointer
+
+    .bottomNav
+        nav
+            ul
+                display: flex
+                justify-content: space-between
+                align-items: center
+                text-decoration: none
+                gap: 15px
+                list-style: none
+                padding: 10px
+                li
+                    font-weight: 600
+                    font-size: 20px
+                    padding: 15px 30px
+                    cursor: pointer
+                    margin: 20px 0px
+                    &:hover
+                        border-bottom: solid 2px $light
+        .sidebarButton
+            display: flex
+            gap: 8px
+
+    .sideBar__off
+        height: 100%
+        width: 0
+        position: fixed
+        z-index: 1
+        top: 0
+        left: 0
+        background-color: $light
+        overflow-x: hidden
+        padding-top: 60px
+        @include transition-ease
+
+    .sideBar__on
+        height: 100%
+        width: 20%
+        position: fixed
+        z-index: 1
+        top: 0
+        left: 0
+        background-color: $light
+        overflow-x: hidden
+        padding-top: 60px
+        @include transition-ease
+        .opacity
+            position: fixed
+            top: 0
+            right: 0
+            background-color: #00000087
+            width: 80%
+            height: 100%
+            @include transition-ease
+            
+    .closeSideBar
+        position: absolute
+        top: 0
+        right: 25px
+        margin-left: 50px
+        color: $primary-color
+        cursor: pointer
+        width: 100%
+        .topSide
+            margin: 10px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            h1
+                font-size: 20px
+            .sideLogo
+                display: flex
+                align-items: center
+                margin-left: 20px
+                
+    .links
+        color: $primary-color
+        margin: 10px
+        display: flex
+        flex-direction: column
+        gap: 5px
+        font-size: 20px
+
+    .social
+        position: absolute
+        bottom: 7%
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .screen
+        display: flex

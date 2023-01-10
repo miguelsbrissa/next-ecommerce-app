@@ -1,0 +1,15 @@
+$primary-color: #606C38
+$secondary-color: #DDA15E
+$dark-primary: #283618
+$dark-secondary: #BC6C25
+$light: #FEFAE0
+// paleta de cores https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
+    
+@mixin transition-ease
+    transition: all 0.5s ease-in-out
+
+@function set-text-color($color)
+    @if(lightness($color) > 40%)
+        @return black
+    @else
+        @return white
