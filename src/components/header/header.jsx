@@ -10,7 +10,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import styles from '../../../styles/Header.module.sass'
 
-export const Header = () => {
+export const Header = ({ data }) => {
   const [sideBar, setSideBar] = useState(styles.sideBar__off)
   const openSideBar = () => {
     setSideBar(styles.sideBar__on)
@@ -35,10 +35,13 @@ export const Header = () => {
                   <CloseIcon sx={{ color: '#606C38', width: 40, height: 40 }} />
                 </div>
               </div>
-
             </div>
             <div className={styles.links}>
-              <Link href='/'>Day offers</Link>
+              {
+                data?.map(cat => (
+                  <Link key={cat.id} href={cat.link}>{cat.name}</Link>
+                ))
+              }
             </div>
             <div className={styles.social}>
               <Link href={'/'}>
