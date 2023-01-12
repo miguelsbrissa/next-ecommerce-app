@@ -1,9 +1,6 @@
-import { useRouter } from "next/router";
 import { Header, Product } from "../../src/components";
 
-
 export default function SingleProduct({ data }) {
-    const router = useRouter()
     return (
         <>
             <Header />
