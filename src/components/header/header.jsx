@@ -64,10 +64,10 @@ export const Header = ({ data }) => {
       </div>
       <div>
         <div className={styles.topNav}>
-          <div className={styles.logo}>
+          <Link href={'/'} className={styles.logo}>
             <SpaIcon sx={{ color: '#DDA15E', width: 70, height: 70 }} />
             <h1>Healthy Food</h1>
-          </div>
+          </Link>
 
           <div className={styles.searchInput}>
             <input className={styles.input} placeholder='Search' />
@@ -90,18 +90,17 @@ export const Header = ({ data }) => {
 
               </li>
               <li>
-                <Link href='/'>Day offers</Link>
+                <Link href='/day-offers'>Day offers</Link>
               </li>
               <li>
-                <Link href='/'>Top sellers</Link>
+                <Link href='/top-sellers'>Top sellers</Link>
               </li>
               <li>
-                <Link href='/'>For you</Link>
+                <Link href='/for-you'>For you</Link>
               </li>
             </ul>
           </nav>
         </div>
-
       </div>
     </header>
   )

@@ -41,44 +41,50 @@
             "id": 1,
             "name": "Apple",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar ligula vel sapien tincidunt, ut porta enim volutpat. Nulla iaculis tempus massa, eu aliquam mauris ullamcorper quis. Suspendisse pretium iaculis purus, in maximus eros tempus non. ",
-            "link": "/apple",
-            "img":"/images/apple.png",
+            "link": "apple",
+            "img": "/images/apple.png",
             "price": "$0.99",
             "categories": [
-                "fruits", "top-sellers"
+                "fruits",
+                "top-sellers"
             ]
         },
         {
             "id": 2,
             "name": "Orange",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar ligula vel sapien tincidunt, ut porta enim volutpat. Nulla iaculis tempus massa, eu aliquam mauris ullamcorper quis. Suspendisse pretium iaculis purus, in maximus eros tempus non. ",
-            "link": "/orange",
-            "img":"/images/orange.png",
+            "link": "orange",
+            "img": "/images/orange.png",
             "price": "$0.99",
             "categories": [
-                "fruits", "for-you"
+                "fruits",
+                "for-you"
             ]
         },
         {
             "id": 3,
             "name": "Grape",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar ligula vel sapien tincidunt, ut porta enim volutpat. Nulla iaculis tempus massa, eu aliquam mauris ullamcorper quis. Suspendisse pretium iaculis purus, in maximus eros tempus non. ",
-            "link": "/grape",
-            "img":"/images/grape.png",
+            "link": "grape",
+            "img": "/images/grape.png",
             "price": "$2.99",
             "categories": [
-                "fruits", "top-sellers", "for-you"
+                "fruits",
+                "top-sellers",
+                "for-you"
             ]
         },
         {
             "id": 4,
             "name": "Pineapple",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar ligula vel sapien tincidunt, ut porta enim volutpat. Nulla iaculis tempus massa, eu aliquam mauris ullamcorper quis. Suspendisse pretium iaculis purus, in maximus eros tempus non. ",
-            "link": "/pineapple",
-            "img":"/images/Pineapple.png",
+            "link": "apple",
+            "img": "/images/Pineapple.png",
             "price": "$4.99",
             "categories": [
-                "fruits", "top-sellers", "for-you"
+                "fruits",
+                "top-sellers",
+                "for-you"
             ]
         }
     ]

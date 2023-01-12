@@ -8,7 +8,7 @@ export const Categorie = ({ data, pageName }) => {
             <div className={styles.products}>
                 {
                     data.map(prod => (
-                        <Card key={prod.id} img={prod.img} name={prod.name} price={prod.price} size={300} />
+                        <Card key={prod.id} img={prod.img} name={prod.name} price={prod.price} link={'/' + prod.categories[0] + '/' + prod.link} size={300} />
                     ))
                 }
             </div>
